@@ -1,6 +1,6 @@
 {
   "name": "fontawesome47-subset",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility to create subsets for FontAwesome 4.7",
   "main": "index.js",
   "author": {
