@@ -12,7 +12,7 @@ const
         ttf2woff = require('ttf2woff'),
         ttf2woff2 = require('ttf2woff2');
 
-const svg_file_path = __dirname + `/node_modules/font-awesome/fonts/fontawesome-webfont.svg`;
+const svg_file_path = `node_modules/font-awesome/fonts/fontawesome-webfont.svg`;
 
 /**
  * This function will take an object of glyph names and output a subset of the standard fonts optimized in size for
