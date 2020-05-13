@@ -39,31 +39,6 @@ The above example would output a directory with the following structure:
 
 It is still up to you to determine which glyphs you need and to pass them to the function to generate the webfonts. I recommend optimizing your CSS files as well to get the most from the tool.
 
-### Using with SCSS / SASS
+## Contributing: Publish
 
-If you already have FA installed on your server in relation to your NPM project, you can point the `output_dir` to the webfonts directory that you're already loading and the script will overwrite the current fonts with the newly minified / optimized versions. If you plan on getting a bit more granular you can always edit the `_icons.scss` file provided by the FA team and remove all glyphs that you're not using to save a few more KBs for your end user.
-
-Here's an example of the `_icons.scss` file on a project I've worked on using a sass map for the glyph name `->` variable provided in the `_variables.scss` file: 
-
-```scss
-$icons: (
-        shopping-cart: $fa-var-shopping-cart,
-        chevron-right: $fa-var-chevron-right,
-        chevron-left: $fa-var-chevron-left,
-        chevron-down: $fa-var-chevron-down,
-        check-square: $fa-var-check-square,
-        square: $fa-var-square,
-        caret-up: $fa-var-caret-up,
-        plus: $fa-var-plus,
-        minus: $fa-var-minus,
-        times: $fa-var-times,
-        search: $fa-var-search,
-        check: $fa-var-check,
-);
-
-@each $key, $value in $icons {
-    .#{$fa-css-prefix}-#{$key}:before {
-        content: fa-content($value);
-    }
-}
-```
+Once changes are ready to be published, use "np publish" to publish to the repository
